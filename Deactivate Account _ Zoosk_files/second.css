@@ -1,0 +1,18 @@
+.full-width-module .mod-footer-limited {
+    max-width: 80em !important;
+}
+
+
+.button-v2.button-full, .button-submit.button-full, .button-confirm.button-full {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    display: block;
+    width: 300px !important;
+    float: left;
+}
+
+
+body {
+	display: none !important;
+}

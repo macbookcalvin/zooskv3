@@ -1,0 +1,570 @@
+/*.bigboy {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: white;
+}
+*/
+
+/* background setup */
+.background {
+    background-repeat:no-repeat;
+    /* custom background-position */
+    background-position:50% 50%;
+    /* ie8- graceful degradation */
+    background-position:50% 50%\9 !important;
+}
+
+/* fullscreen setup */
+html, body {
+    /* give this to all tags from html to .fullscreen */
+    height:100%;
+}
+.fullscreen,
+.content-a {
+    width:100%;
+    min-height:100%;
+}
+.not-fullscreen,
+.not-fullscreen .content-a,
+.fullscreen.not-overflow,
+.fullscreen.not-overflow .content-a {
+    height:100%;
+    overflow:hidden;
+}
+
+/* content centering styles */
+.content-a {
+  display:table;
+}
+.content-b {
+  display:table-cell;
+    position:relative;
+  vertical-align:middle;
+  text-align:center;
+    top: 100%;
+  margin-top: -200px;
+}
+
+/* visual styles */
+
+section {
+
+}
+.not-fullscreen {
+    height:50%;
+}
+
+
+/* This parent can be any width and height */
+.block {
+  text-align: center;
+
+  /* May want to do this if there is risk the container may be narrower than the element inside */
+  white-space: nowrap;
+}
+ 
+/* The ghost, nudged to maintain perfect centering */
+.block:before {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+  margin-right: -0.25em; /* Adjusts for spacing */
+}
+
+/* The element to be centered, can also be of any width and height */ 
+.centered {
+  display: inline-block;
+  vertical-align: middle;
+  width: 300px;
+}
+
+
+
+.abimg {
+
+}
+
+.abimg img {
+  width: 150px;
+    margin: auto;
+  position: absolute;
+  top: 0; left: 0; bottom: 0; right: 0;
+    margin-top: 185px !important;
+  border-radius: 10px;
+}
+
+.abh2 {
+    margin: auto;
+  position: absolute;
+  font-size: 3em;
+  font-weight: 200;
+  left: 0; bottom: 10%; right: 0;
+}
+
+.z-result-loader > li {
+  transition: all .5s;
+  background: #379FD0;
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+}
+
+div.container4 {
+    height: 10em;
+    position: relative; }
+div.container4 h2 {
+    margin: 0;
+    font-size: 3em;
+    font-weight: 200;
+    position: absolute;
+    top: -80%;margin-bottom: -100px;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%) }
+
+.z-spinning-loader {
+  height: 360px;
+  margin: auto;
+  position: absolute;
+  margin-top: 80px !important;
+  top: 0; left: 0; bottom: 0; right: 0;
+  width: 20px;
+}
+
+.z-spinning-loader > li {
+  backface-visibility: hidden;
+  /*opacity: 0;*/
+  position: absolute;
+}
+
+.z-spinning-loader > li:nth-child(1) {
+  left: 0;
+  top: 0;
+}
+
+.z-spinning-loader > li:nth-child(2) {
+  transform: rotate(15deg);
+  left: 44px;
+  top: 6px;
+}
+
+.z-spinning-loader > li:nth-child(3) {
+  transform: rotate(29deg);
+  left: 86px;
+  top: 23px;
+}
+
+.z-spinning-loader > li:nth-child(4) {
+  transform: rotate(46deg);
+  left: 122px;
+  top: 52px;
+}
+
+.z-spinning-loader > li:nth-child(5) {
+  transform: rotate(60deg);
+  left: 148px;
+  top: 87px;
+}
+
+.z-spinning-loader > li:nth-child(6) {
+  transform: rotate(75deg);
+  left: 164px;
+  top: 127px;
+}
+
+.z-spinning-loader > li:nth-child(7) {
+  bottom: 0;
+  left: 170px;
+  margin: auto;
+  top: 0;
+}
+
+.z-spinning-loader > li:nth-child(8) {
+  transform: rotate(-75deg);
+  bottom: 127px;
+  left: 164px;
+}
+
+.z-spinning-loader > li:nth-child(9) {
+  transform: rotate(-60deg);
+  bottom: 87px;
+  left: 148px;
+}
+
+.z-spinning-loader > li:nth-child(10) {
+  transform: rotate(-46deg);
+  bottom: 52px;
+  left: 122px;
+}
+
+.z-spinning-loader > li:nth-child(11) {
+  transform: rotate(-29deg);
+  bottom: 23px;
+  left: 86px;
+}
+
+.z-spinning-loader > li:nth-child(12) {
+  transform: rotate(-15deg);
+  bottom: 6px;
+  left: 44px;
+}
+
+.z-spinning-loader > li:nth-child(13) {
+  bottom: 0;
+  left: 0;
+}
+
+.z-spinning-loader > li:nth-child(14) {
+  transform: rotate(15deg);
+  bottom: 6px;
+  left: -44px;
+}
+
+.z-spinning-loader > li:nth-child(15) {
+  transform: rotate(29deg);
+  bottom: 23px;
+  left: -86px;
+}
+
+.z-spinning-loader > li:nth-child(16) {
+  transform: rotate(46deg);
+  bottom: 52px;
+  left: -122px;
+}
+
+.z-spinning-loader > li:nth-child(17) {
+  transform: rotate(60deg);
+  bottom: 87px;
+  left: -148px;
+}
+
+.z-spinning-loader > li:nth-child(18) {
+  transform: rotate(75deg);
+  bottom: 127px;
+  left: -164px;
+}
+
+.z-spinning-loader > li:nth-child(19) {
+  bottom: 0;
+  left: -170px;
+  margin: auto;
+  top: 0;
+}
+
+.z-spinning-loader > li:nth-child(20) {
+  transform: rotate(-75deg);
+  left: -164px;
+  top: 127px;
+}
+
+.z-spinning-loader > li:nth-child(21) {
+  transform: rotate(-60deg);
+  left: -148px;
+  top: 87px;
+}
+
+.z-spinning-loader > li:nth-child(22) {
+  transform: rotate(-46deg);
+  left: -122px;
+  top: 52px;
+}
+
+.z-spinning-loader > li:nth-child(23) {
+  transform: rotate(-29deg);
+  left: -86px;
+  top: 23px;
+}
+
+.z-spinning-loader > li:nth-child(24) {
+  transform: rotate(-15deg);
+  left: -44px;
+  top: 6px;
+}
+
+.z-spinning-loader.z-state-brighten-squares > li {
+  -webkit-animation-name: opacity-0-1;
+  -webkit-animation-duration: .4s;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-name: opacity-0-1;
+  -moz-animation-duration: .4s;
+  -moz-animation-fill-mode: forwards;
+  -o-animation-name: opacity-0-1;
+  -o-animation-duration: .4s;
+  -o-animation-fill-mode: forwards;
+  animation-name: opacity-0-1;
+  animation-duration: .4s;
+  animation-fill-mode: forwards;
+}
+
+.z-spinning-loader.z-state-brighten-squares > li:nth-child(1) {
+  -webkit-animation-delay: 0.08s;
+  -moz-animation-delay: 0.08s;
+  -o-animation-delay: 0.08s;
+  animation-delay: 0.08s;
+}
+
+.z-spinning-loader.z-state-brighten-squares > li:nth-child(2) {
+  -webkit-animation-delay: 0.16s;
+  -moz-animation-delay: 0.16s;
+  -o-animation-delay: 0.16s;
+  animation-delay: 0.16s;
+}
+
+.z-spinning-loader.z-state-brighten-squares > li:nth-child(3) {
+  -webkit-animation-delay: 0.24s;
+  -moz-animation-delay: 0.24s;
+  -o-animation-delay: 0.24s;
+  animation-delay: 0.24s;
+}
+
+.z-spinning-loader.z-state-brighten-squares > li:nth-child(4) {
+  -webkit-animation-delay: 0.32s;
+  -moz-animation-delay: 0.32s;
+  -o-animation-delay: 0.32s;
+  animation-delay: 0.32s;
+}
+
+.z-spinning-loader.z-state-brighten-squares > li:nth-child(5) {
+  -webkit-animation-delay: 0.4s;
+  -moz-animation-delay: 0.4s;
+  -o-animation-delay: 0.4s;
+  animation-delay: 0.4s;
+}
+
+.z-spinning-loader.z-state-brighten-squares > li:nth-child(6) {
+  -webkit-animation-delay: 0.48s;
+  -moz-animation-delay: 0.48s;
+  -o-animation-delay: 0.48s;
+  animation-delay: 0.48s;
+}
+
+.z-spinning-loader.z-state-brighten-squares > li:nth-child(7) {
+  -webkit-animation-delay: 0.56s;
+  -moz-animation-delay: 0.56s;
+  -o-animation-delay: 0.56s;
+  animation-delay: 0.56s;
+}
+
+.z-spinning-loader.z-state-brighten-squares > li:nth-child(8) {
+  -webkit-animation-delay: 0.64s;
+  -moz-animation-delay: 0.64s;
+  -o-animation-delay: 0.64s;
+  animation-delay: 0.64s;
+}
+
+.z-spinning-loader.z-state-brighten-squares > li:nth-child(9) {
+  -webkit-animation-delay: 0.72s;
+  -moz-animation-delay: 0.72s;
+  -o-animation-delay: 0.72s;
+  animation-delay: 0.72s;
+}
+
+.z-spinning-loader.z-state-brighten-squares > li:nth-child(10) {
+  -webkit-animation-delay: 0.8s;
+  -moz-animation-delay: 0.8s;
+  -o-animation-delay: 0.8s;
+  animation-delay: 0.8s;
+}
+
+.z-spinning-loader.z-state-brighten-squares > li:nth-child(11) {
+  -webkit-animation-delay: 0.88s;
+  -moz-animation-delay: 0.88s;
+  -o-animation-delay: 0.88s;
+  animation-delay: 0.88s;
+}
+
+.z-spinning-loader.z-state-brighten-squares > li:nth-child(12) {
+  -webkit-animation-delay: 0.96s;
+  -moz-animation-delay: 0.96s;
+  -o-animation-delay: 0.96s;
+  animation-delay: 0.96s;
+}
+
+.z-spinning-loader.z-state-brighten-squares > li:nth-child(13) {
+  -webkit-animation-delay: 1.04s;
+  -moz-animation-delay: 1.04s;
+  -o-animation-delay: 1.04s;
+  animation-delay: 1.04s;
+}
+
+.z-spinning-loader.z-state-brighten-squares > li:nth-child(14) {
+  -webkit-animation-delay: 1.12s;
+  -moz-animation-delay: 1.12s;
+  -o-animation-delay: 1.12s;
+  animation-delay: 1.12s;
+}
+
+.z-spinning-loader.z-state-brighten-squares > li:nth-child(15) {
+  -webkit-animation-delay: 1.2s;
+  -moz-animation-delay: 1.2s;
+  -o-animation-delay: 1.2s;
+  animation-delay: 1.2s;
+}
+
+.z-spinning-loader.z-state-brighten-squares > li:nth-child(16) {
+  -webkit-animation-delay: 1.28s;
+  -moz-animation-delay: 1.28s;
+  -o-animation-delay: 1.28s;
+  animation-delay: 1.28s;
+}
+
+.z-spinning-loader.z-state-brighten-squares > li:nth-child(17) {
+  -webkit-animation-delay: 1.36s;
+  -moz-animation-delay: 1.36s;
+  -o-animation-delay: 1.36s;
+  animation-delay: 1.36s;
+}
+
+.z-spinning-loader.z-state-brighten-squares > li:nth-child(18) {
+  -webkit-animation-delay: 1.44s;
+  -moz-animation-delay: 1.44s;
+  -o-animation-delay: 1.44s;
+  animation-delay: 1.44s;
+}
+
+.z-spinning-loader.z-state-brighten-squares > li:nth-child(19) {
+  -webkit-animation-delay: 1.52s;
+  -moz-animation-delay: 1.52s;
+  -o-animation-delay: 1.52s;
+  animation-delay: 1.52s;
+}
+
+.z-spinning-loader.z-state-brighten-squares > li:nth-child(20) {
+  -webkit-animation-delay: 1.6s;
+  -moz-animation-delay: 1.6s;
+  -o-animation-delay: 1.6s;
+  animation-delay: 1.6s;
+}
+
+.z-spinning-loader.z-state-brighten-squares > li:nth-child(21) {
+  -webkit-animation-delay: 1.68s;
+  -moz-animation-delay: 1.68s;
+  -o-animation-delay: 1.68s;
+  animation-delay: 1.68s;
+}
+
+.z-spinning-loader.z-state-brighten-squares > li:nth-child(22) {
+  -webkit-animation-delay: 1.76s;
+  -moz-animation-delay: 1.76s;
+  -o-animation-delay: 1.76s;
+  animation-delay: 1.76s;
+}
+
+.z-spinning-loader.z-state-brighten-squares > li:nth-child(23) {
+  -webkit-animation-delay: 1.84s;
+  -moz-animation-delay: 1.84s;
+  -o-animation-delay: 1.84s;
+  animation-delay: 1.84s;
+}
+
+.z-spinning-loader.z-state-brighten-squares > li:nth-child(24) {
+  -webkit-animation-delay: 1.92s;
+  -moz-animation-delay: 1.92s;
+  -o-animation-delay: 1.92s;
+  animation-delay: 1.92s;
+}
+
+.z-spinning-loader.z-state-spin {
+/*  -webkit-animation: spinning 5s linear, fade 1s 5s forwards;
+  -moz-animation: spinning 5s linear, fade 1s 5s forwards;
+  -o-animation: spinning 5s linear, fade 1s 5s forwards;
+  animation: spinning 5s linear, fade 1s 5s forwards;
+*/
+
+    -webkit-animation: spinning 5s linear infinite, fade 1s 5s;
+  -moz-animation: spinning 5s linear infinite, fade 1s 5s;
+  -o-animation: spinning 5s linear infinite, fade 1s 5s;
+  animation: spinning 5s linear infinite, fade 1s 5s;
+}
+
+
+
+
+/* KEYFRAMES */
+@-webkit-keyframes spinning {
+    0% {
+        -webkit-transform: rotate(0) translateZ(0);
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg) translateZ(0);
+    }
+}
+
+@-moz-keyframes spinning {
+    0% {
+        -moz-transform: rotate(0) translateZ(0);
+    }
+
+    100% {
+        -moz-transform: rotate(360deg) translateZ(0);
+    }
+}
+
+@-o-keyframes spinning {
+    0% {
+        -o-transform: rotate(0) translateZ(0);
+    }
+
+    100% {
+        -o-transform: rotate(360deg) translateZ(0);
+    }
+}
+
+@keyframes spinning {
+    0% {
+        transform: rotate(0) translateZ(0);
+    }
+
+    100% {
+        transform: rotate(360deg) translateZ(0);
+    }
+}
+
+
+
+
+@-webkit-keyframes fade {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@-moz-keyframes fade {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@-o-keyframes fade {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes fade {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+
+
